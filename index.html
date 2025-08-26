@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lux Motors</title>
+    <link rel="icon" href="rsc/favicon/luxico.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        .navigation{
+            background-color: blue;
+            margin: auto;
+            padding: 15px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        a{
+            padding: 30px;
+        }
+        #shop_info{
+            margin: auto;
+        }
+        #shop_info h2{
+            text-align: center;
+        }
+
+        #shop_gal img{
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            padding-top: 30px;
+            display: block;
+        }
+        #shop_gal h5, p{
+            text-align: center;
+        }
+        #shop_gal img:hover {
+             transform: scale(1.10);
+             box-shadow: 0 8px 20px black; 
+        }
+        #buys{
+            margin: 0 auto;
+            display: block;
+        }
+        #footer{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header><img src="rsc/favicon/Lux Motors.png" alt="Autodeal" style="width: 100%; display: block; "></header>
+    <div class="navigation">
+        <nav>
+            <a href="index.html" style="color: white;">Home</a>
+            <a href="#shop_info" style="color: white;">Shop Information</a>
+            <a href="#shop_gal" style="color: white;">Shop Gallery</a>
+            <a href="#footer" style="color: white;">Footer</a>
+        </nav>
+    </div>
+<hr>
+    <div id="shop_info">
+        <h2>Auto Deal</h2>
+        <h5> <i class="fa-solid fa-location-dot"></i> Location: 10, De Marzo St, Barangay San Antonio, Candon City, Ilocos Sur</h5>
+        <h5><i class="fa-solid fa-phone-volume"></i> Phone: 0952 556 5570/Globe||0922 282 2909/ Smart</h5>
+        <h5><i class="fa-solid fa-envelope"></i> Email: luxmotorss@gmail.com</h5>
+        <h5><i class="fa-solid fa-building"></i> Office Hours: 8: AM to 6 PM, Monday to Saturday</h5>
+    </div>
+<hr>
+    <div id="shop_gal">
+        <img src="rsc/img/2018_Aston_Martin_DB11_V8_Automatic_4.0_Front.jpg" alt="">
+        <h5> <i class="fa-solid fa-car"></i> Car Name: Aston Martin DB11</h5>
+        <p>Description: Aston Martin DB11 is a Grand Tourer (GT), Powered by V8 and V12 engines.</p>
+        <h5><i class="fa-solid fa-dollar-sign"></i> Price: $220,000 </h5>
+        <button onclick="buyBtn()" id="buys">Buy NOW</button>
+
+        <img src="rsc/img/Aston_Martin Valkyrie.jpg" alt="">
+        <h5><i class="fa-solid fa-car"></i> Aston Martin Valkyrie</h5>
+        <p>Description: Aston Martin Valkyrie is a hypercar with Formula 1(F1) aerodynamics and V12 engine.</p>
+        <h5><i class="fa-solid fa-dollar-sign"></i>Price: $4,000,000</h5>
+        <button onclick="buyBtn()" id="buys">Buy NOW</button>
+
+        <img src="rsc/img/Bugatti Chiron.jpg" alt="">
+        <h5> <i class="fa-solid fa-car"></i> Bugatti Chiron</h5>
+        <p>Description: Bugatti Chiron is a hypercar powered by an 8.0 liter quad-turbo W16 engine offering an unmatched speed.</p>
+        <h5><i class="fa-solid fa-dollar-sign"></i> Price: $4,600,000</h5>
+        <button onclick="buyBtn()" id="buys">Buy NOW</button>
+
+        <img src="rsc/img/Ferrari_Enzo.jpg" alt="">
+        <h5><i class="fa-solid fa-car"></i> Ferrari Enzo</h5>
+        <p>Ferrari Enzo is a supercar with F1-based technology and partnered with V12 engine which focused on extreme performance. </p>
+        <h5><i class="fa-solid fa-dollar-sign"></i>Price: $3,700,000</h5>
+        <button onclick="buyBtn()" id="buys">Buy NOW</button>
+
+        <img src="rsc/img/Ford Mustang 5.2 V8 GT Shelby GT500 .jpg" alt="">
+        <h5><i class="fa-solid fa-car"></i> Ford Mustang</h5>
+        <p>Ford Mustang is a pony car powered with V8 engines.</p>
+        <h5><i class="fa-solid fa-dollar-sign"></i> Price: $70,000 </h5>
+        <button onclick="buyBtn()" id="buys">Buy NOW</button>
+
+        <img src="rsc/img/Lamborghini Aventador.jpg" alt="">
+        <h5><i class="fa-solid fa-car"></i> Lamborghini Aventador</h5>
+        <p>Description: Lamborghini Aventador is a supercar powered by V12 engine combined with agressive design.</p>
+        <h5><i class="fa-solid fa-dollar-sign"></i> Price: $570,000</h5>
+        <button onclick="buyBtn()" id="buys">Buy NOW</button>
+
+        <img src="rsc/img/Lamborghini_hURacan.jpg" alt="">
+        <h5><i class="fa-solid fa-car"></i> Lamborghini Huracan</h5>
+        <p>Description: Lamborghini Huracan is a supercar with V10 engine providing a top-notch performance.</p>
+        <h5><i class="fa-solid fa-dollar-sign"></i> Price: $350,000</h5>
+        <button onclick="buyBtn()" id="buys">Buy NOW</button>
+
+        <img src="rsc/img/mclaren_p1.jpg" alt="">
+        <h5><i class="fa-solid fa-car"></i> Mclaren P1</h5>
+        <p>Description: Mclaren P1 is a hybrid supercar powered by a twin turbo V8 and electric motor.</p>
+        <h5><i class="fa-solid fa-dollar-sign"></i> Price: $1,350,000</h5>
+        <button onclick="buyBtn()" id="buys">Buy NOW</button>
+
+        <img src="rsc/img/Nissan_GTR_R35.jpg" alt="">
+        <h5><i class="fa-solid fa-car"></i> Nissan GTR R35</h5>
+        <p>Description: Nissan GTR R35 is a supercar powered twin-turbo V6 providing a performance that earbed a nickname, "Godzilla".</p>
+        <h5><i class="fa-solid fa-dollar-sign"></i> $150,000</h5>
+        <button onclick="buyBtn()" id="buys">Buy NOW</button>
+
+        <img src="rsc/img/pagani_huayra.jpg" alt="">
+        <h5><i class="fa-solid fa-car"></i> Pagani Huayra</h5>
+        <p>Description: Pagani Huayra is a hypercard known for its artistic design. It is powered by AMG-sourced twin-turbo V12 engine.</p>
+        <h5><i class="fa-solid fa-dollar-sign"></i> $3,400,000</h5>
+        <button onclick="buyBtn()" id="buys">Buy NOW</button>
+
+        <img src="rsc/img/Porsche_911.jpg" alt="">
+        <h5><i class="fa-solid fa-car"></i> Porsche 911</h5>
+        <p>Description: Porsche 911 is a well-known sports car, renowned for its unique rear engine layout, powered by Flat 6 engine.</p>
+        <h5><i class="fa-solid fa-dollar-sign"></i> Price: $190,000</h5>
+        <button onclick="buyBtn()" id="buys">Buy NOW</button>
+
+        <img src="rsc/img/Toyota_Supra_MK5.jpg" alt="">
+        <h5><i class="fa-solid fa-car"></i> Toyota Supra MK5</h5>
+        <p>Description: Toyota Supra MK5 is a modern sports car powered by 3.0L twin-scroll turbocharged inline-six (B58) and a 2.0L turbocharged inline-four (B48) from BMW.</p>
+        <h5><i class="fa-solid fa-dollar-sign"></i> Price: $70,000</h5>
+        <button onclick="buyBtn()" id="buys">Buy NOW</button>
+
+    </div>
+
+    <footer id="footer">
+        <p>Developed by: GIRAY, Jerome V.</p>
+        <p>BSCS 2-B</p>
+    </footer>
+
+    <script>
+    document.getElementById("buys").addEventListener("click", buyBtn);
+    function buyBtn(){
+        alert("Proceeding to payment section... Please Wait")
+    } 
+    </script>
+</body>
+</html>
